@@ -7,9 +7,17 @@ import skills from "./skill";
 
 function Body() {
   return (
-    <div className=" overflow-y-hidden overflow-x-hidden sticky w-full h-full sm:flex gap-x-8  mt-12 px-6">
-      <section className="w-4/5 sticky sm:px-10">
-        <div >
+    // 1. Changed the main container to `flex` for the two columns.
+    // Removed `overflow-y-hidden` and `overflow-x-hidden` as they were preventing all scrolling.
+    // Added `h-screen` and `overflow-hidden` to the parent to enforce a fixed height and contain the content.
+    <div className="flex w-full h-screen gap-x-8 mt-12 px-6 overflow-hidden">
+      
+      {/* 2. Hero Section (Left Column) */}
+      {/* Set `w-2/5` for a fixed width (adjust as needed). 
+          Removed `sticky` and `w-4/5` which was causing layout issues with the flex container. 
+          The `h-full` and no overflow classes ensure it remains static. */}
+      <section className="w-2/5 sm:px-10 h-full">
+        <div>
           <h1 className="text-5xl font-bold"> Hi I'm SHERIFFDEEN.</h1>
           <div className="flex gap-x-4 mb-6">
             <span className="underline text-gray-500">Software Engineer</span>
@@ -54,13 +62,20 @@ function Body() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col">
+
+      {/* 3. Projects/Skills Container (Right Column) */}
+      {/* Set `flex-grow` and `overflow-y-auto` to enable scrolling for this column only.
+          `w-3/5` is the remaining width (2/5 + 3/5 = 5/5 or 100%).
+          `pb-20` is added to ensure there's enough padding at the bottom for the last section to scroll up fully. */}
+      <div className="flex flex-col w-3/5 flex-grow overflow-y-auto h-full pb-20">
+        
+        {/* Projects Section */}
         <section id="Projects-section">
           <h1 className="text-2xl text-gray-700 font-bold">Featured Project</h1>
 
           <div className="flex flex-col gap-y-4">
             {projectDetails.map((project, index) => (
-              <div className="w-4/5 m-auto rounded-xl p-8 shadow-md" key={index}>
+              <div className="rounded-xl p-8 shadow-md" key={index}>
                 <div className="desc">
                   <h3>{project.title}</h3>
 
@@ -74,10 +89,15 @@ function Body() {
             ))}
           </div>
         </section>
-        <section >
+        
+        {/* Horizontal Rule for separation (optional) */}
+        <hr className="my-10 border-gray-200" />
+        
+        {/* Skills Section */}
+        <section>
           <h1 className="text-2xl text-gray-700 font-bold">Technical Skills</h1>
 
-          <div className="w-4/5 m-auto rounded-xl p-8 shadow-md">
+          <div className="rounded-xl p-8 shadow-md">
             {skills.map((skill, index) => (
               <div className="skill-content" key={index}>
                 <h3>{skill.title}</h3>
