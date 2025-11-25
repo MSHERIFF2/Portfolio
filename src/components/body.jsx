@@ -7,7 +7,7 @@ import skills from "./skill";
 
 function Body() {
   return (
-    <div className=" overflow-y-hidden overflow-x-hidden sticky w-full h-full  flex-col sm:flex gap-x-8  mt-12 px-6">
+    <div className=" overflow-y-hidden overflow-x-hidden sticky w-full h-full sm:flex gap-x-8  mt-12 px-6">
       <section className="w-4/5 sticky sm:px-10">
         <div >
           <h1 className="text-5xl font-bold"> Hi I'm SHERIFFDEEN.</h1>
