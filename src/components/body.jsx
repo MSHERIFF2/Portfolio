@@ -8,12 +8,12 @@ import skills from "./skill";
 function Body() {
   return (
    
-    <div className="flex flex-col sm:flex-row w-full h-screen gap-x-8 mt-12 px-6 overflow-hidden  text-gray-800 ">
+    <div className="flex flex-col sm:flex-row w-full sm:h-screen gap-x-8  px-6 py-6 overflow-hidden  text-gray-800 ">
       
       
-      <section className="w-2/5 sm:px-10 h-full">
+      <section className="sm:w-3/5 sm:px-10 sm:h-full">
         <div>
-          <h1 className="text-5xl font-bold"> Hi I'm SHERIFFDEEN.</h1>
+          <h1 className="sm:text-5xl text-3xl font-bold"> Hi I'm SHERIFFDEEN.</h1>
           <div className="flex gap-x-4 mb-6">
            
             <span className="underline text-gray-500 ">Software Engineer</span>
@@ -23,7 +23,7 @@ function Body() {
             </span>
           </div>
        
-          <p className="mb-8 text-gray-500 text-justify sm:text-xl ">
+          <p className="mb-8 text-gray-900 text-justify sm:text-l ">
             I am Highly motivated and experienced software engineer with a
             strong background in developing scalable, efficient, and reliable
             software systems. Proficient in range of programming languages,
@@ -31,22 +31,24 @@ function Body() {
             intermediate skill in both front-end and back-end development.
           </p>
         
-          <p className="text-gray-500 text-justify sm:text-xl ">
+          <p className="text-gray-900 text-justify sm:text-l ">
             In addition to my technical expertise, I devote time to create
             content on my learning journey by researching and crafting vidoes on
             frontend technologies. You can find my insights shared on platforms
             such as Hashnode, as well as my experiences on Medium.
           </p>
         
-          <div className="flex gap-x-4 my-6 text-gray-700 font-semi-bold text-xl dark:text-gray-300">
+          <div className=" justify-center sm:justify-left flex gap-x-4 my-6 text-gray-700 font-semi-bold text-l ">
             <a
               href={github}
+              target="_blank"
               className="hover:underline hover:cursor-pointer hover:transition hover:duration-1500 hover:ease-in-out"
             >
               Github
             </a>
             <a
               href={linkedin}
+              target="_blank"
               className="hover:underline hover:cursor-pointer hover:transition hover:duration-1500 hover:ease-in-out"
             >
               LinkedIn
@@ -63,25 +65,25 @@ function Body() {
       </section>
 
       
-      <div className="flex flex-col w-3/5 flex-grow overflow-y-auto h-full pb-20">
+      <div className="flex flex-col sm:w-3/5 flex-grow sm:no-scrollbar sm:overflow-y-auto h-full pb-20 text-white">
         
        
         <section id="Projects-section">
          
-          <h1 className="text-2xl text-gray-700 font-bold dark:text-gray-200">Featured Project</h1>
+          <h1 className="text-2xl text-gray-900 font-bold sm:mx-34">Featured Project</h1>
 
           <div className="flex flex-col gap-y-4">
             {projectDetails.map((project, index) => (
              
               <div 
-                className="rounded-xl p-8 shadow-md bg-white dark:bg-gray-800 dark:shadow-lg hover:shadow-xl dark:hover:shadow-2xl transition duration-300 ease-in-out" 
+                className="sm:w-3/5 sm:m-auto rounded-xl p-8 shadow-md bg-white dark:bg-gray-800 dark:shadow-lg hover:shadow-xl dark:hover:shadow-2xl transition duration-300 ease-in-out" 
                 key={index}
               >
                 <div className="desc">
                   <h3>{project.title}</h3>
                   <p>{project.description} </p>
                  
-                  <a className="text-gray-700 undernline dark:text-teal-400" href={project.demoUrl} target="_blank">
+                  <a className="text-yellow-100 undernline " href={project.demoUrl} target="_blank">
                     View Project
                   </a>
                 </div>
@@ -91,17 +93,17 @@ function Body() {
         </section>
 
        
-        <hr className="my-10 border-gray-200 dark:border-gray-700" />
+        <hr className="my-10 mx-32 border-gray-200 dark:border-gray-700" />
    
         <section>
        
-          <h1 className="text-2xl text-gray-700 font-bold dark:text-gray-200">Technical Skills</h1>
+          <h1 className="text-2xl text-gray-900 font-bold sm:mx-34">Technical Skills</h1>
 
    
-          <div className="rounded-xl p-8 shadow-md bg-white dark:bg-gray-800 dark:shadow-lg">
+          <div className="flex flex-col gap-y-8"  >
             {skills.map((skill, index) => (
-              <div className="skill-content" key={index}>
-                <h3>{skill.title}</h3>
+              <div className="sm:w-3/5 sm:m-auto rounded-xl p-8  shadow-md bg-white dark:bg-gray-800 dark:shadow-lg hover:shadow-xl dark:hover:shadow-2xl transition duration-300 ease-in-out" key={index}>
+                <h3 className="text-yellow-100 underline">{skill.title}</h3>
                 <ul>
                   {skill.items.map((item, idx) => (
                     <li key={idx}>{item}</li>
