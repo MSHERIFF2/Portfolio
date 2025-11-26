@@ -8,7 +8,7 @@ import skills from "./skill";
 function Body() {
   return (
    
-    <div className="flex flex-col sm:flex-row w-full h-screen gap-x-8 mt-12 px-6 overflow-hidden bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200">
+    <div className="flex flex-col sm:flex-row w-full h-screen gap-x-8 mt-12 px-6 overflow-hidden  text-gray-800 ">
       
       
       <section className="w-2/5 sm:px-10 h-full">
