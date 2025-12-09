@@ -1,5 +1,10 @@
 const projectDetails = [
-   
+    {
+        title:"TICKET MANAGEMENT APP",
+        
+        description:"Build with React",
+        demoUrl: 'https://tickets-app-react-v.netlify.app/',
+    },
  
    {
         title:"GETCHANGE CLONE",
@@ -12,12 +17,7 @@ const projectDetails = [
         description:'LEZADA is an e-commerce website that I replicate',
         demoUrl: 'https://lezadaclone.vercel.app/'
     },
-    {
-        title:"AGRI SMART",
-        
-        description:"this project is built for local farmer in Kaduna for easy access to farm information, weather condition and a medium to sell their farm product direct to consumer",
-        demoUrl: 'https://msheriff2.github.io/landingpage/',
-    },
+   
     {
         title:"AFURAH",
         
@@ -25,18 +25,7 @@ const projectDetails = [
         demoUrl: 'https://msheriff2.github.io/afura/'
     },
    
-    {
-        title:"CODING CALCULATOR",
-       
-        description:'This project look simple but it implement both frontend and backend tech',
-        demoUrl: 'https://simple-coding-calculator-iat8gwvil.vercel.app/'
-    },
-     {
-        title:"COFFEE",
-       
-        description:'This is a frontend project developed with html and css only and it is SPA',
-        demoUrl: 'https://msheriff2.github.io/Coffee/'
-    }
+   
 ]
 
 export default projectDetails;
