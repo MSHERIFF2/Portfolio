@@ -5,6 +5,12 @@ const projectDetails = [
         description:"Build with React",
         demoUrl: 'https://tickets-app-react-v.netlify.app/',
     },
+     {
+        title:"CHUCKS KITCHEN APP",
+        
+        description:"Build with React",
+        demoUrl: 'https://chucks-kitchen-alpha.vercel.app/',
+    },
  
    {
         title:"GETCHANGE CLONE",
@@ -27,5 +33,6 @@ const projectDetails = [
    
    
 ]
+
 
 export default projectDetails;
