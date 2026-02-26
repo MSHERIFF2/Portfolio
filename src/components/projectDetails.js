@@ -5,13 +5,11 @@ const projectDetails = [
         description:"Build with React",
         demoUrl: 'https://tickets-app-react-v.netlify.app/',
     },
-    
     {
-        title:"CHUCKS KITCHEN APP",
+         title:"CHUCKS KITCHEN APP",
         description:"Build with React",
         demoUrl: 'https://chucks-kitchen-alpha.vercel.app/',
-    },
- 
+    }, 
    {
         title:"GETCHANGE CLONE",
              description:'I designed this project using vue.js and tailwindcss',
@@ -24,16 +22,12 @@ const projectDetails = [
         demoUrl: 'https://lezadaclone.vercel.app/'
     },
    
-    {
-        title:"AFURAH",
-        
-        description:'This Project is built for a charity organisation with html, css and JavaScript',
-        demoUrl: 'https://msheriff2.github.io/afura/'
-    },
+    
    
    
 ]
 
 
 export default projectDetails;
+
 
