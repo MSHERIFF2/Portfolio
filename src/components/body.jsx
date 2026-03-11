@@ -11,23 +11,24 @@ function Body() {
       {/* LEFT SIDE: Fixed Bio Section */}
       <section className="lg:w-2/5 lg:h-screen lg:sticky lg:top-0 px-8 py-12 lg:py-24 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800/50">
         <div>
-          <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2">
-            SHERIFFDEEN
-          </h1>
-          <h2 className="text-xl font-medium text-blue-400 mb-6 tracking-tight">
-            Software Engineer & Tech Educator
-          </h2>
-          
-          <div className="space-y-4 max-w-md text-slate-400 leading-relaxed text-lg">
-            <p>
-              I build scalable, efficient, and <span className="text-white">reliable software systems</span>. 
-              Specializing in <span className="text-blue-300 font-mono text-sm">TypeScript, Python, and C</span>.
-            </p>
-            <p>
-              Beyond the code, I bridge the knowledge gap by crafting technical content for 
-              <span className="text-slate-200"> Hashnode</span> and <span className="text-slate-200">Medium</span>.
-            </p>
-          </div>
+  <h1 className="text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-2">
+    SHERIFFDEEN
+  </h1>
+  <h2 className="text-xl font-medium text-blue-400 mb-6 tracking-tight">
+    Software & Data Engineer | Tech Educator
+  </h2>
+  
+  <div className="space-y-4 max-w-md text-slate-400 leading-relaxed text-lg">
+    <p>
+      I architect <span className="text-white font-semibold">robust data pipelines</span> and scalable software systems. 
+      Specializing in <span className="text-blue-300 font-mono text-sm">Python, PySpark, and Next.js</span> to turn raw data into actionable insights.
+    </p>
+    <p>
+      Bridging the gap between <span className="text-slate-200 font-medium">complex infrastructure</span> and clear understanding through technical content on 
+      <span className="text-slate-200 hover:text-blue-400"> Hashnode</span> and <span className="text-slate-200 hover:text-blue-400"> Medium</span>.
+    </p>
+  </div>
+</div>
 
           {/* Modern Social Links */}
           <nav className="flex items-center gap-6 mt-10">
@@ -110,5 +111,6 @@ function Body() {
     </div>
   );
 }
+
 
 export default Body;
