@@ -14,34 +14,34 @@ function Body() {
             SHERIFFDEEN
           </h1>
           <h2 className="text-xl font-medium text-blue-400 mb-6 tracking-tight">
-            Software & Data Engineer | Tech Educator
+            Software Engineer | UI/UX Designer | Data Engineer
           </h2>
 
           <div className="space-y-4 max-w-md text-slate-400 leading-relaxed text-lg">
             <p>
-              I architect{" "}
+              I bridge the gap between{" "}
               <span className="text-white font-semibold">
-                robust data pipelines
+                human-centric design
               </span>{" "}
-              and scalable software systems. Specializing in{" "}
-              <span className="text-blue-300 font-mono text-sm">
-                Python, PySpark, and Next.js
-              </span>{" "}
-              to turn raw data into actionable insights.
+              and{" "}
+              <span className="text-white font-semibold">
+                scalable data architecture.
+              </span>
             </p>
             <p>
-              Bridging the gap between{" "}
-              <span className="text-slate-200 font-medium">
-                complex infrastructure
-              </span>{" "}
-              and clear understanding through technical content on
-              <span className="text-slate-200 hover:text-blue-400 cursor-pointer">
-                {" "}
+              An <span className="text-blue-300">ALX & 3MTT Alumnus</span>, I
+              specialize in crafting high-performance frontend experiences that
+              are as functional as they are data-driven. I don't just write
+              code; I engineer the entire lifecycle from the{" "}
+              <span className="text-slate-200 font-medium">pixel to the database.</span>
+            </p>
+            <p className="text-sm font-mono text-slate-500">
+              Sharing technical insights on{" "}
+              <span className="text-slate-200 hover:text-blue-400 cursor-pointer underline underline-offset-4">
                 Hashnode
               </span>{" "}
               and{" "}
-              <span className="text-slate-200 hover:text-blue-400 cursor-pointer">
-                {" "}
+              <span className="text-slate-200 hover:text-blue-400 cursor-pointer underline underline-offset-4">
                 Medium
               </span>
               .
@@ -76,9 +76,9 @@ function Body() {
           </nav>
         </div>
 
-        {/* <footer className="hidden lg:block text-xs text-slate-600 font-mono">
-          // 2026_PORTFOLIO_V2
-        </footer> */}
+        <footer className="hidden lg:block text-xs text-slate-600 font-mono italic">
+          // Designing for users, coding for machines, engineering for data.
+        </footer>
       </section>
 
       {/* RIGHT SIDE: Scrollable Content */}
@@ -87,7 +87,7 @@ function Body() {
         <section id="projects">
           <div className="flex items-center gap-4 mb-8">
             <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-500 whitespace-nowrap">
-              Featured Projects
+              Selected Works
             </h3>
             <div className="h-px w-full bg-slate-800"></div>
           </div>
@@ -114,7 +114,6 @@ function Body() {
                     </p>
                   </div>
 
-                  {/* FIXED TAGS SECTION */}
                   <div className="flex flex-wrap gap-2">
                     {project.tags &&
                       project.tags.map((tag, tagIndex) => (
