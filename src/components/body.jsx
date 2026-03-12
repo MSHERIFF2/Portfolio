@@ -76,9 +76,9 @@ function Body() {
           </nav>
         </div>
 
-        <footer className="hidden lg:block text-xs text-slate-600 font-mono">
+        {/* <footer className="hidden lg:block text-xs text-slate-600 font-mono">
           // 2026_PORTFOLIO_V2
-        </footer>
+        </footer> */}
       </section>
 
       {/* RIGHT SIDE: Scrollable Content */}
