@@ -11,24 +11,14 @@ const projectDetails = [
     demoUrl: "https://chucks-kitchen-alpha.vercel.app/",
     tags: ["Next.js", "React", "Tailwind CSS", "Full-Stack"]
   },
-  {
-    title: "GETCHANGE CLONE",
-    description: "A precision-engineered clone of the GetChange platform, focusing on complex UI components and state management. Built with Vue.js and Tailwind CSS to replicate advanced fintech interface patterns.",
-    demoUrl: "https://getchangeclone-ke2o0gdjp-muritala-sheriffdeen-adegokes-projects.vercel.app/",
-    tags: ["Vue.js", "Tailwind CSS", "UI/UX Replication"]
-  },
+ 
   {
     title: "TICKET MANAGEMENT APP",
     description: "A functional productivity tool designed to manage support tickets and workflow. Developed with React, focusing on efficient state handling, CRUD operations, and intuitive user navigation.",
     demoUrl: "https://tickets-app-react-v.netlify.app/",
     tags: ["React", "State Management", "CRUD"]
   },
-  {
-    title: "LEZADA E-COMMERCE CLONE",
-    description: "A comprehensive replication of the LEZADA e-commerce experience. This project explores high-fidelity UI design, product filtering systems, and responsive layouts for modern online retail.",
-    demoUrl: "https://lezadaclone.vercel.app/",
-    tags: ["React", "E-commerce", "Responsive Design"]
-  },
+ 
 ];
 
 export default projectDetails;
